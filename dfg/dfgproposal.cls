@@ -40,6 +40,7 @@
 \renewenvironment{prop@proposal}
 {\ifsubmit\setcounter{page}{1}\else
 \thispagestyle{empty}%
+\@ifundefined{prop@gen@since}{\renewcommand\prop@gen@instrument{Neuantrag auf Sachbeihilfe}}{\renewcommand\prop@gen@instrument{Fortsetzungsantrag auf Sachbeihilfe}}%
 \begin{center}
 {\LARGE \prop@gen@instrument}\\[.2cm]
 {\LARGE\textbf{\prop@gen@title}}\\[.3cm]
